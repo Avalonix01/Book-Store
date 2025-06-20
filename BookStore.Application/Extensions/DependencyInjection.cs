@@ -23,7 +23,7 @@ public static class DependencyInjection
         services.AddScoped<IBookService, BookService>();
 
         services.AddScoped<IAuthService, AuthService>();
-        services.AddSingleton<IJwtService, JwtService>();
+        services.AddSingleton<JwtService>();
 
         #region Auth injection
         services.AddAuthentication(options =>

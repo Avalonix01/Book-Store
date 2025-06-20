@@ -9,11 +9,11 @@ namespace BookStore.Application.Services.AuthServices;
 
 public class AuthService : IAuthService
 {
-    private readonly IJwtService _jwtService;
+    private readonly JwtService _jwtService;
     private readonly IUserRepository _userRepository;
     private readonly ILogger _logger;
 
-    public AuthService(IJwtService jwtService, IUserRepository userRepository, ILogger logger)
+    public AuthService(JwtService jwtService, IUserRepository userRepository, ILogger logger)
     {
         _jwtService = jwtService;
         _userRepository = userRepository;

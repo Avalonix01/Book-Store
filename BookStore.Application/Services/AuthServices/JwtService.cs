@@ -7,7 +7,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace BookStore.Application.Services.AuthServices;
 
-public class JwtService(IConfiguration configuration) : IJwtService
+public class JwtService(IConfiguration configuration)
 {
     public string GenerateToken(IEnumerable<Claim> claims)
     {
